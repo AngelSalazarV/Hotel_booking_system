@@ -25,7 +25,7 @@ export default function LoginPage() {
             </Header>
             <div className={`flex h-screen justify-center items-center dark:bg-negro-claro`} >
                 <div className="w-96 h-96 bg-white dark:bg-negro-claro rounded-lg shadow-lg flex flex-col items-center justify-center p-4 ">
-                    <h1 className="text-3xl font-bold text-blue-900 dark:text-white mb-10">Hotel System</h1>
+                    <h1 className="text-3xl font-bold text-blue-900 dark:text-white mb-10 text-center">RIVERA INN HOTEL SYSTEM</h1>
                     <form className="w-full mt-4" onSubmit={handleClick}>
                         <input type="text" placeholder="Usuario" className="w-full px-3 py-2  border border-gray-300 dark:border-gray-500 dark:bg-negro-claro rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 dark:focus:ring-white focus:border-transparent"/>
                         <input type="password" placeholder="Contraseña" className="w-full mt-4 px-3 py-2 border border-gray-300 dark:border-gray-500 dark:bg-negro-claro rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 dark:focus:ring-white focus:border-transparent"/>

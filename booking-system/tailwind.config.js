@@ -6,6 +6,7 @@ export default {
     extend: {
       colors: {
         'negro-claro' : '#242422',
+        'gris-oscuro' : '#2D2D2D'
       }
     },
   },

@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Pencil, Trash2, Info} from 'lucide-react'
 import classNames from 'classnames'
 import { dataCategorias } from '../utils/dataCategorias'
-import Modal from './modals/ModalNiveles'
+import Modal from './modals/ModalCategorias'
 
 export default function DataTableCategorias() {
     const [data, setData] = useState(dataCategorias)

@@ -38,6 +38,7 @@ const SimpleBarChart = () => {
                     <XAxis dataKey="month"/>
                     <YAxis/>
                     <Legend/>
+                    <Tooltip/>
                     <Bar dataKey="quantity" fill="#8884d8"/>
                 </BarChart>
             </ResponsiveContainer>

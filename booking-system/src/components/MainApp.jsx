@@ -1,4 +1,4 @@
-import { LayoutDashboard, Circle, Check, ClipboardCheck } from "lucide-react"
+import { LayoutDashboard, Circle, Check, ClipboardCheck, Bolt, ShoppingCart, User } from "lucide-react"
 import Sidebar, { SidebarItem } from './Sidebar'
 import DashboardContent from './sidebarContent/DashboardContent'
 import VentasContent from "./sidebarContent/VentasContent"
@@ -25,16 +25,16 @@ export default function MainApp() {
     <div className={`flex  ${theme} h-`}>
         <Sidebar>
             <SidebarItem icon={<LayoutDashboard size={20}/>} text="Dashboard" active={isActive("/dashboard")} onClick={() => navigate("/dashboard")}/>
-            <SidebarItem icon={<LayoutDashboard size={20}/>} text="Ventas" active={isActive("/ventas")} >
+            <SidebarItem icon={<ShoppingCart size={20}/>} text="Ventas" active={isActive("/ventas")} >
                 <SidebarItem icon={<Circle size={20}/>} text="Productos" active={isActive("/ventas/productos")} onClick={() => navigate("/ventas/productos")}/>
                 <SidebarItem icon={<Circle size={20}/>} text="Venta" active={isActive("/ventas/venta")} onClick={() => navigate("/ventas/venta")}/>
             </SidebarItem>
-            <SidebarItem icon={<ClipboardCheck size={20}/>} text="Configuración" active={isActive("/configuracion")}>
+            <SidebarItem icon={<Bolt size={20}/>} text="Configuración" active={isActive("/configuracion")}>
                 <SidebarItem icon={<Circle size={20}/>} text="Habitaciones" active={isActive("/habitaciones")} onClick={() => navigate("configuracion/habitaciones")}/>
                 <SidebarItem icon={<Circle size={20}/>} text="Categorias" active={isActive("/categorias")} onClick={() => navigate("/configuracion/categorias")}/>
                 <SidebarItem icon={<Circle size={20}/>} text="Niveles" active={isActive("/niveles")} onClick={() => navigate("/configuracion/niveles")}/>
             </SidebarItem>
-            <SidebarItem icon={<LayoutDashboard size={20}/>} text="Usuarios" active={isActive("/usuarios")} onClick={() => navigate("/usuarios")}/>
+            <SidebarItem icon={<User size={20}/>} text="Usuarios" active={isActive("/usuarios")} onClick={() => navigate("/usuarios")}/>
         </Sidebar>
         <section className={`w-full min-h-screen bg-gray-50 dark:bg-negro-claro`}>
             <Routes>

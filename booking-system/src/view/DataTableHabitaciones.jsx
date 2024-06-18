@@ -25,19 +25,10 @@ export default function DataTableHabitaciones() {
             )
         },
         {
-            accessorKey: 'Nombre'
-        },
-        {
-            accessorKey: 'Categoria'
-        },
-        {
-            accessorKey: 'Precio'
-        },
-        {
-            accessorKey: 'Detalles'
-        },
-        {
             accessorKey: 'Nivel'
+        },
+        {
+            accessorKey: 'Nombre'
         },
         {
             accessorKey: ' ',
@@ -68,7 +59,7 @@ export default function DataTableHabitaciones() {
     return (
       <div className=' py-6 px-7 w-full flex flex-col rounded-lg overflow-hidden bg-white dark:bg-gray-700 dark:text-gray-200'>
         <div>
-          <button className='bg-blue-600 text-white py-2 px-4 rounded-lg mb-2 hover:bg-blue-700' onClick={handleClickOpenModal}>Agregar Habitación</button>
+          <button className='bg-blue-600 text-white py-2 px-4 rounded-lg mb-2 hover:bg-blue-700' onClick={handleClickOpenModal}>Agregar Habitacion</button>
           <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} onAddOrder={handleAddProduct} />
         </div>
           <table className='table-auto border border-gray-200 dark:border-gray-500 w-full ' >
