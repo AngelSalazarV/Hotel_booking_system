@@ -1,12 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: 'class',
-  content: ["index.html","./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
-        'negro-claro' : '#242422',
-        'gris-oscuro' : '#2D2D2D'
+        'negro-claro' : '#2D2D2D',
+        'gris-oscuro' : '#2D2D2D',
+        'gris-top-dashboard' : '#525152',
+        'gris-bottom-dashboard' : '#343434'
       }
     },
   },
